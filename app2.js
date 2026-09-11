@@ -6,7 +6,8 @@ app.use(express.json());
 
 const productos = [
   { id: 1, nombre: "Laptop", precio: 8000 },
-  { id: 2, nombre: "Tablet", precio: 4000 }
+  { id: 2, nombre: "Teclado", precio: 1000 },
+  { id: 3, nombre: "Tablet", precio: 4000 }
 ];
 
 
@@ -48,6 +49,7 @@ app.post('/api/productos', (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
 });
+
 
 /*
 app.use(express.json());
